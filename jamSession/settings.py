@@ -77,6 +77,7 @@ WSGI_APPLICATION = 'jamSession.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 '''
+#This is the old code
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -84,7 +85,8 @@ DATABASES = {
     }
 }
 '''
-
+'''
+#this is the new code
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -92,6 +94,19 @@ DATABASES = {
         'USER': 'fvwvghsbsazkir',
         'PASSWORD': 'bcc8834f7aa1882037eeac0eaf7b2e35b1762e7c24e4572f2d0386e999a6ea4b',
         'HOST': 'ec2-34-233-115-14.compute-1.amazonaws.com',
+        'PORT':  '5432',
+    }
+}
+'''
+
+#lil waters
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd6mvnt31ee02cj',
+        'USER': 'jfauvzwwkyherf',
+        'PASSWORD': 'ea87d13de5bd408152e9f9a4eb31c8f88cf9895cb6b84e896ced80d8418ed63c',
+        'HOST': 'ec2-52-22-136-117.compute-1.amazonaws.com',
         'PORT':  '5432',
     }
 }
