@@ -76,14 +76,25 @@ WSGI_APPLICATION = 'jamSession.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+'''
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dde4o4h2oi9598',
+        'USER': 'fvwvghsbsazkir',
+        'PASSWORD': 'bcc8834f7aa1882037eeac0eaf7b2e35b1762e7c24e4572f2d0386e999a6ea4b',
+        'HOST': 'ec2-34-233-115-14.compute-1.amazonaws.com',
+        'PORT':  '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
